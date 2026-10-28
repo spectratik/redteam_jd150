@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spectratik-redteam_jd150"
+version = "0.1.0"
+description = "把输入按语义边界切成独立单元，逐单元核对红队与内容安全工程师·模型热切换的一致性相关的特征并标出命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "spectratik" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://spectratik.github.io"
+Repository = "https://github.com/spectratik/redteam_jd150"
+Issues = "https://github.com/spectratik/redteam_jd150/issues"
+
+[project.scripts]
+redteam_jd150 = "redteam_jd150:main"
+
+[tool.setuptools]
+py-modules = ["redteam_jd150"]
